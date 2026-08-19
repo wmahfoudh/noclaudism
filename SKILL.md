@@ -19,7 +19,8 @@ Remove the style, not the substance.
 
 The style being removed has two layers. The first is fake social
 behavior: praise the reader did not ask for, agreement announced before
-content, honesty announced instead of practiced. The second is a
+content, disagreement invented to seem rigorous, honesty announced
+instead of practiced, work graded instead of described. The second is a
 private vocabulary of metaphors and frames that the writer treats as
 shared language when the reader never agreed to it. Both layers make a
 reader work to find out what actually happened.
@@ -31,13 +32,34 @@ most tics carry no information, so the right fix is removal, and the
 sentence that remains must stand on its own.
 
 **Delete the social layer.** Openers like "You're absolutely right",
-"Great question", "Good catch", "Fair point", "That's a valid concern"
-come out whole. If the user was right about a fact, the rewrite shows
-it by stating the fact.
+"Great question", "Good catch", "Fair point", "That's a valid concern",
+"That tracks" come out whole, and so do grades handed to the reader:
+"sharp observation", "you're half right, and the half where you're
+wrong is the interesting part", "the most honest thing anyone's said
+in this conversation". If the user was right about a fact, the rewrite
+shows it by stating the fact; if a claim was half right, state which
+half and why, or nothing. A verdict with no specifics behind it is
+deleted, not reworded: "part of what you said is right, part is wrong"
+is the same empty grade in plain clothes.
 
 - Before: "You're absolutely right, and that changes the scope of this
   task in a meaningful way. The parser does skip empty lines."
 - After: "The parser does skip empty lines, so the task changes."
+
+**Delete manufactured disagreement and apology theater.** When nothing
+needs correcting, the style invents something: a misunderstanding the
+reader never had, a "gentle pushback" against a claim nobody made, a
+decision attributed to the reader that the writer proposed. Delete the
+invention and answer what was asked. A real mistake gets one sentence,
+what went wrong and what changes, not a confession scene: "and that's
+on me", "I should have checked before assuming", "I owe you a straight
+account" come out in every wording, including "that was my mistake" as
+a closing moral.
+
+- Before: "That's a fair challenge, and I owe you a straight answer.
+  I deleted the old parser without checking first, and that's on me."
+- After: "I deleted the old parser. The importer still calls it, so I
+  am restoring it."
 
 **Delete announced honesty.** "Honestly", "to be honest", "my honest
 take", "let me be direct", "real talk", "one honest caveat", "full
@@ -51,10 +73,26 @@ announcement was worse.
 
 **Delete importance frames.** "The key insight is", "what actually
 matters here", "crucially", "worth noting", "worth flagging", "the
-crux", "the kicker", "why this matters". Delete the frame and keep
-what was inside it. If the content is important, it survives on its
-own; if the sentence collapses without its frame, the frame was the
-content, and nothing is lost.
+crux", "the kicker", "why this matters", "sit with it". Delete the
+frame and keep what was inside it. If the content is important, it
+survives on its own; if the sentence collapses without its frame, the
+frame was the content, and nothing is lost. Throat-clearing
+transitions ("that said", "to be fair", "if anything") follow the same
+rule: delete unless the sentence actually reverses direction.
+
+**Delete self-grading.** "Clean", "elegant", "tight",
+"production-ready", "the tests have teeth", "now I have the complete
+picture": the writer grading their own work. Delete the grade and keep
+the description of what the work does. A status claim survives only
+next to its evidence, what ran and what passed; when the evidence is
+not in the text, say what was done and stop. Rewording the grade
+("ready for production", "catches real failures") is the tic
+surviving, not the fix.
+
+- Before: "The refactor came out clean, production-ready even, and the
+  test suite finally has teeth."
+- After: "The refactor merges the two loaders into one. All 34 tests
+  pass, including a new one that fails if the cache is skipped."
 
 **Replace the metaphor lexicon with the concrete fact.** Words like
 load-bearing, footgun, seam, spine, blast radius, smoking gun,
@@ -67,6 +105,11 @@ Say the specific thing, in the domain's own words.
 - After: "Three call sites depend on this check. Removing it breaks
   session refresh, logout, and the tests that cover both."
 
+The same replacement applies to stock anecdotes and costume images:
+"turtles all the way down", "eating the elephant one bite at a time",
+"X in a trench coat pretending to be Y". Name the things compared and
+the property they actually share.
+
 The full catalog with replacements is in `references/claudisms.md`.
 Read it when auditing a text, and whenever unsure whether a phrase is
 a tic or a term the domain actually uses. A term the reader's field
@@ -75,27 +118,35 @@ may stay when the audience is that field.
 
 **Unwind the contrast reflex.** "It's not X, it's Y" and "this isn't
 just X, it's Y" become a sentence about Y. Keep the contrast only when
-someone actually claimed X and the difference decides something.
+someone actually claimed X and the difference decides something. The
+"X over Y" aphorism ("honesty over sunk cost") gets the same
+treatment: state the actual decision and its reason.
 
 **Cut epigrams and offers.** The short closing thump ("That's the
 whole story.", "And that's not nothing.") comes off; the paragraph
 ends on its last fact. Sign-off offers ("Want me to keep going?",
 "Say the word", "Happy to elaborate") come out unless the text
 genuinely needs a decision from the reader, in which case ask a plain
-question naming the decision.
+question naming the decision. The same goes for "Verdict:" and "TL;DR"
+stamps on a text short enough to not need them, care-talk closers
+("Seriously, get some rest", "How does that land?"), and homework
+questions invented so the text ends on engagement.
 
 **Dissolve the skeleton.** When every reply has the same shape
 (warm opener, three bullets, a caveat, an offer), the shape itself is
 a tic. Let the content pick the shape: one finding is one paragraph,
 a list of four files is a list, a decision needing input ends with the
-question.
+question. Staged pacing is part of the same performance: "Wait.",
+"Oh.", "Let me pause here", one-word paragraphs for effect. The reader
+sets their own pace.
 
 **Retire private shorthand.** A name coined earlier in a conversation
-or document ("the parity bench", "the doctrine", "the 74.5% problem")
-is not shared vocabulary. Either say what the thing is in ordinary
-words, or introduce the name properly once and use it consistently.
-The test for every sentence: would it make sense, read aloud, to
-someone who was not there when the shorthand was coined?
+or document ("the parity bench", "the doctrine", "the 74.5% problem",
+"the 'bootstrap-as-séance' problem") is not shared vocabulary. Either
+say what the thing is in ordinary words, or introduce the name
+properly once and use it consistently. The test for every sentence:
+would it make sense, read aloud, to someone who was not there when the
+shorthand was coined?
 
 **Keep sentences whole.** An actor, a verb, everyday words. Split
 noun-pile inventories into sentences with subjects. Passive voice
@@ -113,6 +164,10 @@ loader" becomes "the loader opens the file".
   three call sites break), the rewrite states that information rather
   than deleting it. When the information is not in the text and cannot
   be recovered, keep the claim general rather than inventing details.
+- Direction of specificity. The rewrite replaces a tic with something
+  more concrete, never with a vaguer synonym. "Load-bearing" becoming
+  "important", or "production-ready" becoming "ready for production",
+  is the same tic in a plainer coat.
 
 ## Procedure
 

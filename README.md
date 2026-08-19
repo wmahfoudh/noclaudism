@@ -1,6 +1,6 @@
 # noclaudism
 
-**This README is written by Claude**
+**Claude wrote this README**
 
 A skill for Claude that rewrites Claude's own output into plain
 English.
@@ -15,28 +15,36 @@ threads, and built translators for it. This skill is one of those
 translators, written as instructions Claude follows rather than as a
 second model watching the first.
 
-Two findings from those threads shaped the design. Banning words does
-not work, because the habit behind the word finds a synonym: remove
-"load-bearing" and "the crux" appears. And style instructions placed
-at the start of a session fade as the conversation grows. So this
-skill is not a standing instruction. It is a rewrite pass, invoked
-fresh each time, built on principles and example pairs instead of a
-ban list.
+Three findings from those threads shaped the design. Banning words
+does not work, because the habit behind the word finds a synonym:
+remove "load-bearing" and "the crux" appears. Style instructions
+placed at the start of a session fade as the conversation grows. And
+word-level substitution, whether a regex hook or a generic "simplify"
+instruction, leaves the reply's structure intact and tends to make
+text vaguer rather than plainer. So this skill is not a standing
+instruction and not a word list. It is a rewrite pass, invoked fresh
+each time, built on principles and example pairs, and its repairs move
+toward the concrete fact.
 
 ## What it does
 
 Given a passage, a file, or its own previous reply, Claude rewrites
 the prose so that:
 
-- fake agreement and praise are gone
+- fake agreement, praise, and grades on the reader are gone
+- invented pushback and confession scenes over mistakes are gone
 - "honestly", "let me be direct" and their family are gone
-- metaphors are replaced by the concrete fact they stood for
+- metaphors and stock anecdotes are replaced by the concrete fact
+  they stood for
+- self-grades like "clean" and "production-ready" become a
+  description of what the work does, with evidence when there is any
 - "it's not X, it's Y" becomes a sentence about Y
-- closing offers and summarizing one-liners are gone
+- closing offers, verdict stamps, and care-talk sign-offs are gone
 - every sentence has an actor and a verb
 
-Facts, numbers, names, file paths, code blocks, and quoted errors are
-kept exactly. Real uncertainty stays, stated plainly.
+The rewrite keeps facts, numbers, names, file paths, code blocks, and
+quoted errors exactly as they were. Real uncertainty stays, stated
+plainly.
 
 It also covers the compressed forms of the same style: commit
 messages, PR titles, and changelog entries become one active sentence
