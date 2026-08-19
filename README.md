@@ -1,5 +1,7 @@
 # noclaudism
 
+**This README is written by Claude**
+
 A skill for Claude that rewrites Claude's own output into plain
 English.
 
