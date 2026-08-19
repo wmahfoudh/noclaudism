@@ -107,7 +107,9 @@ its frame, the frame was hiding that there was no content.
   "and that matters"
 - "Crucially" / "importantly" / "notably" / "tellingly"
 - "Worth noting" / "worth flagging" / "worth calling out" /
-  "worth knowing about" / "worth sitting with"
+  "worth knowing about" / "worth sitting with" / "worth naming"
+- "naming" as an intellectual act: "the pattern you're naming",
+  "names the problem". Say, show, or display it instead
 - "Sit with it" / "the thing to hold onto"
 - "Know this cold" / "Lock it in"
 - "The kicker" / "the punchline" / "the tell" / "the bottom line"
@@ -142,6 +144,32 @@ production", "catches real failures").
 - "Now I have the complete picture" / "the full picture"
 - "We've landed the fix" / "the fix landed"
 - "The result is decisive"
+- "with a clear message" / "a helpful error": the message grading
+  itself. State what the message says, or use the domain's phrase:
+  "compressed files are not supported"
+
+## Personification
+
+Data gets a mind: contents "decide", an archive "says so", a function
+"wants", a config "knows". The habit usually appears while escaping
+passive voice: the real actor (the program, the writer) was dropped,
+so something inanimate is promoted into the subject slot and handed a
+verb of thought. Name the real actor, or keep a plain passive when
+the actor is obvious or beside the point. A program performing its
+function stays active ("Oryx opens the archive", "the parser skips
+empty lines"); data does not decide, know, say, want, or believe.
+
+- Before: "The file's content decides how it opens, not its name."
+- After: "Files are interpreted by their content, because the
+  extension is often misleading."
+
+Naming the actor is not a license to put it everywhere or to hand it
+drama. A program that is the subject of every sentence ("Oryx opens...
+Oryx reports... it refuses...") is a skeleton of its own;
+documentation keeps plain passives when the actor is obvious. And the
+program's verbs stay ordinary: shows, displays, reads, reports. Where
+the field has a standard phrase, use it: "compressed files are not
+supported" beats "it refuses the compressed one".
 
 ## The metaphor lexicon
 

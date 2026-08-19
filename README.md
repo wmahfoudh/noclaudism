@@ -39,6 +39,8 @@ the prose so that:
 - self-grades like "clean" and "production-ready" become a
   description of what the work does, with evidence when there is any
 - "it's not X, it's Y" becomes a sentence about Y
+- data stops thinking: contents that "decide" or "know" get a real
+  actor or a plain passive
 - closing offers, verdict stamps, and care-talk sign-offs are gone
 - every sentence has an actor and a verb
 

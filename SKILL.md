@@ -150,8 +150,20 @@ shorthand was coined?
 
 **Keep sentences whole.** An actor, a verb, everyday words. Split
 noun-pile inventories into sentences with subjects. Passive voice
-becomes active where an actor exists: "the file is opened by the
-loader" becomes "the loader opens the file".
+becomes active where a real actor exists: "the file is opened by the
+loader" becomes "the loader opens the file". Do not repair a passive
+by promoting data to a mind: contents do not "decide", an archive
+does not "say so", a config does not "know". Name the real actor, or
+keep a plain passive when the actor is obvious or beside the point;
+a program as the subject of every sentence is a skeleton of its own.
+The named actor gets ordinary verbs (shows, displays, reads) and the
+field's standard phrase where one exists: "compressed files are not
+supported" beats "it refuses the compressed one with a clear
+message".
+
+- Before: "The file's content decides how it opens, not its name."
+- After: "Files are interpreted by their content, because the
+  extension is often misleading."
 
 ## What never changes
 
